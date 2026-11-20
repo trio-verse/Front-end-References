@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 644" width="760" height="644" font-family="'IBM Plex Sans Arabic','Noto Kufi Arabic','DejaVu Sans',sans-serif" font-size="13" direction="rtl" role="img" aria-label="الرمي يحدث في طبقة واحدة فقط: الـ service داخل المتصفح">
+<rect width="760" height="644" fill="#FBFAF6"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8a8a99"/></marker></defs>
+<text x="380" y="28" text-anchor="middle" font-size="15" font-weight="600" fill="#1C1C36">الرمي يحدث في طبقة واحدة فقط: الـ service داخل المتصفح</text>
+<rect x="140" y="56" width="320" height="244" rx="8" fill="none" stroke="#cfcbc0" stroke-width="1.25"/>
+<text x="190" y="78" text-anchor="middle" font-size="11.5" fill="#5d5d73">المتصفح</text>
+<rect x="140" y="324" width="320" height="172" rx="8" fill="none" stroke="#cfcbc0" stroke-width="1.25"/>
+<text x="190" y="346" text-anchor="middle" font-size="11.5" fill="#5d5d73">خادم Next.js</text>
+<rect x="140" y="520" width="320" height="100" rx="8" fill="none" stroke="#cfcbc0" stroke-width="1.25"/>
+<text x="190" y="542" text-anchor="middle" font-size="11.5" fill="#5d5d73">الباك اند</text>
+<rect x="180.0" y="92" width="240" height="48" rx="8" fill="none" stroke="#8a8a99" stroke-width="1.25"/>
+<line x1="420.0" y1="116.0" x2="492" y2="116.0" stroke="#cfcbc0" stroke-dasharray="3 3"/>
+<text x="300" y="120" text-anchor="middle" fill="#1C1C36">المكوّن</text>
+<text x="614" y="120" text-anchor="middle" font-size="11.5" fill="#5d5d73">يعرض فقط ويستدعي hook الميزة</text>
+<rect x="180.0" y="164" width="240" height="48" rx="8" fill="none" stroke="#8a8a99" stroke-width="1.25"/>
+<line x1="420.0" y1="188.0" x2="492" y2="188.0" stroke="#cfcbc0" stroke-dasharray="3 3"/>
+<text x="300" y="192" text-anchor="middle" fill="#1C1C36">queries.ts</text>
+<text x="614" y="192" text-anchor="middle" font-size="11.5" fill="#5d5d73">useQuery و useMutation</text>
+<rect x="180.0" y="236" width="240" height="48" rx="8" fill="#3488CA" fill-opacity="0.12" stroke="#3488CA" stroke-width="2"/>
+<line x1="420.0" y1="260.0" x2="492" y2="260.0" stroke="#cfcbc0" stroke-dasharray="3 3"/>
+<text x="300" y="264" text-anchor="middle" font-weight="600" fill="#1C1C36">service.ts</text>
+<text x="614" y="264" text-anchor="middle" font-size="11.5" fill="#1C1C36">يرمي ApiRequestError عند الفشل</text>
+<rect x="180.0" y="360" width="240" height="48" rx="8" fill="none" stroke="#8a8a99" stroke-width="1.25"/>
+<line x1="420.0" y1="384.0" x2="492" y2="384.0" stroke="#cfcbc0" stroke-dasharray="3 3"/>
+<text x="300" y="388" text-anchor="middle" fill="#1C1C36">actions.ts</text>
+<text x="614" y="388" text-anchor="middle" font-size="11.5" fill="#5d5d73">يُرجع ApiResponse كما هو</text>
+<rect x="180.0" y="432" width="240" height="48" rx="8" fill="none" stroke="#8a8a99" stroke-width="1.25"/>
+<line x1="420.0" y1="456.0" x2="492" y2="456.0" stroke="#cfcbc0" stroke-dasharray="3 3"/>
+<text x="300" y="460" text-anchor="middle" fill="#1C1C36">http.server.ts</text>
+<text x="614" y="460" text-anchor="middle" font-size="11.5" fill="#5d5d73">يضيف التوكن ولا يرمي أبداً</text>
+<rect x="180.0" y="556" width="240" height="48" rx="8" fill="none" stroke="#8a8a99" stroke-width="1.25"/>
+<line x1="420.0" y1="580.0" x2="492" y2="580.0" stroke="#cfcbc0" stroke-dasharray="3 3"/>
+<text x="300" y="584" text-anchor="middle" fill="#1C1C36">Trioverse API (.NET)</text>
+<text x="614" y="584" text-anchor="middle" font-size="11.5" fill="#5d5d73">مصدر البيانات والتحقق</text>
+<g fill="none" stroke="#8a8a99" stroke-width="1.25">
+<path d="M300 140V164" marker-end="url(#a)"/>
+<path d="M300 212V236" marker-end="url(#a)"/>
+<path d="M300 284V360" marker-end="url(#a)"/>
+<path d="M300 408V432" marker-end="url(#a)"/>
+<path d="M300 480V556" marker-end="url(#a)"/>
+</g></svg>
