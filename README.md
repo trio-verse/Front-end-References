@@ -34,6 +34,26 @@ Nov 20, 2026 · @yazan
 
 كل طلب يمر من المكوّن إلى الباك اند عبر خمس طبقات، ويعود الرد بالمسار نفسه، والرمي يحدث في طبقة واحدة فقط.
 
+```mermaid
+flowchart TD
+  subgraph B["المتصفح"]
+    C["المكوّن<br/>يعرض فقط ويستدعي hook الميزة"]
+    Q["queries.ts<br/>useQuery و useMutation"]
+    S["service.ts<br/>يرمي ApiRequestError عند الفشل"]
+  end
+  subgraph N["خادم Next.js"]
+    A["actions.ts<br/>يُرجع ApiResponse كما هو"]
+    H["http.server.ts<br/>يضيف التوكن ولا يرمي أبداً"]
+  end
+  subgraph K["الباك اند"]
+    API["Trioverse API (.NET)"]
+  end
+
+  C --> Q --> S --> A --> H --> API
+
+  style S fill:#e7f1fb,stroke:#3488CA,stroke-width:2px
+```
+
 &#91;embedded content: مسار الطلب · 6 طبقات في 3 مناطق\]
 
 المكوّن يطلب من hook، والـ hook من الـ service، والـ service يستدعي Server Action تعبر إلى الخادم، فيصل `http.server.ts` إلى .NET ويعود الرد كـ `ApiResponse` حتى يحوّله الـ service إلى بيانات أو رمي.
